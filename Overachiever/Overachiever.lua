@@ -1188,6 +1188,7 @@ do
   end
 
   function achbtnOnLeave(self)
+    GameTooltip:Hide()
     button = nil
    -- AchievementMeta_OnLeave(self) -- Used because it sets guildMemberRequestFrame, a variable local to Blizzard_AchievementUI.lua,
     -- to nil without doing anything else except GameTooltip:Hide() which we want to do anyway.
