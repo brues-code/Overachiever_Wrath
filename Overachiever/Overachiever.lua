@@ -906,7 +906,7 @@ local function MetaCriteriaOnEnter(self)
     GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT")
     local link = GetAchievementLink(id)
     GameTooltip:SetHyperlink(link)
-    checkGuildMembersTooltip(self)
+    --checkGuildMembersTooltip(self)
     if (GameTooltip:GetBottom() < self:GetTop()) then
       GameTooltip:ClearAllPoints()
       GameTooltip:SetPoint("TOPLEFT", self, "BOTTOMLEFT")
@@ -916,7 +916,7 @@ local function MetaCriteriaOnEnter(self)
   elseif ( self.date ) then
     GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
     GameTooltip:AddLine(string.format(ACHIEVEMENT_META_COMPLETED_DATE, self.date), 1, 1, 1);
-    checkGuildMembersTooltip(self)
+    --checkGuildMembersTooltip(self)
     GameTooltip:Show();
   end
 end
